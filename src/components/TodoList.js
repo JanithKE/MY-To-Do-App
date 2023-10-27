@@ -34,7 +34,7 @@ function TodoList() {
 
     
 
-    const completedTodo = id => {
+    const completeTodo = id => {
       let updatedTodos= todos.map(todo => {
         if( todo.id === id){
           todo.isComplete =!todo.isComplete;
@@ -49,7 +49,7 @@ function TodoList() {
 
       <h1>What's the plan for today?</h1>
       <TodoForm onSubmit={addTodo}/> 
-      <Todo todos={todos} completedTodo={completedTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>
+      <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo}/>
 
     </div>
   )
