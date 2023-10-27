@@ -2,6 +2,8 @@ import React, {useState,useEffect,useRef} from 'react'
 
 function TodoForm(props) {
 
+    //getting inputs
+
     const [input,setInput] = useState(props.edit ? props.edit.value : '');
 
     const inputRef = useRef(null)
@@ -10,9 +12,13 @@ function TodoForm(props) {
         inputRef.current.focus()
     })
 
+    //changing the input in update section
+
     const handleChange = e =>{
         setInput(e.target.value)
     }
+
+    //submitting the input or updated input
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -29,6 +35,8 @@ function TodoForm(props) {
   return (
 
     <div>
+
+        {/**these arethe input fields and buttons for input & update tasks */}
 
         <form className='todo-form' onSubmit={handleSubmit}>
 

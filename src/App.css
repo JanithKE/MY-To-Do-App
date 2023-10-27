@@ -67,17 +67,24 @@ h1 {
 }
 
 .todo-input.edit{
-    border: 2px solid #3b7dac;
     padding: 12px 32px 12px 16px;
+    border-radius: 6px 0 0 6px;
+    border: 3px solid #ffffff;
+    background-color: #777777;
+    color: #080808;
 }
 
 .todo-button.edit{
     background: linear-gradient(
     90deg,
-    rgba(20, 159, 255, 1) 0%,
-    rgba(17, 122, 255, 1) 100%
+    rgb(240, 240, 240) 0%,
+    rgb(175, 175, 175) 100%
   );
-  padding: 16px 22px;
+    color: #191e31;
+    padding: 12px 15px 12px 15px;
+    border-radius: 0 6px 6px 0;
+    border: 3px solid #ffffff;
+    margin-left: 5px;
 }
 
 .todo-container {
@@ -97,9 +104,9 @@ h1 {
     rgb(104, 103, 103) 0%,
     rgb(132, 106, 228) 100%
   );
-    padding: 16px;
+    padding: 12px 32px 12px 16px;
     border-radius: 6px;
-    width: 90%;
+    width: 70%;
 }
 
 .todo-raw:nth-child(4n+1){
